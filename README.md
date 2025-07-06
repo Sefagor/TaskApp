@@ -1,8 +1,8 @@
-# 📝 TaskApp
+#TaskApp
 
 TaskApp is a simple task manager web application built with Flask. Users can add, update, and delete tasks. Each task includes content and a timestamp, stored in a SQLite database. The frontend is styled using SCSS for a clean and responsive UI.
 
-## 🚀 Features
+## Features
 
 - Add new tasks  
 - Edit existing tasks  
@@ -10,7 +10,7 @@ TaskApp is a simple task manager web application built with Flask. Users can add
 - View creation date of tasks  
 - Clean and responsive design using SCSS
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python 3  
 - Flask  
@@ -20,7 +20,7 @@ TaskApp is a simple task manager web application built with Flask. Users can add
 - HTML / Jinja2  
 - SCSS (Sass)
 
-## 💻 Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository**:
 
@@ -55,7 +55,7 @@ TaskApp is a simple task manager web application built with Flask. Users can add
    Open your browser and go to:  
    [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 TaskApp/
@@ -71,7 +71,7 @@ TaskApp/
 └── README.md
 ```
 
-## 📌 Notes
+## Notes
 
 - SCSS compilation requires a watcher. You can use the Sass CLI:
 
@@ -81,6 +81,6 @@ TaskApp/
 
 - If you encounter issues with database creation, ensure `database.db` is correctly configured and that `db.create_all()` is called within the app context.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
