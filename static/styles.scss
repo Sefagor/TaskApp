@@ -1,0 +1,94 @@
+$primary-color: #2d2d2d;
+$accent-color: #4CAF50;
+$danger-color: #e74c3c;
+$bg-color: #f8f9fa;
+$text-color: #333;
+$border-radius: 0.4rem;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: $primary-color;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: left;
+  }
+
+  th {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  td a {
+    color: $accent-color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  td a:first-child {
+    color: $danger-color;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="text"] {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 1rem;
+  }
+
+  input[type="submit"] {
+    background-color: $accent-color;
+    color: white;
+    padding: 0.6rem;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
